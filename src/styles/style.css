@@ -1,0 +1,85 @@
+@import url(reset-css.css);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans|Lato|Roboto);
+:root {
+    --black-coral: #636A72ff;
+    --black-bean: #391101ff;
+    --teal-blue: #186E86ff;
+    --burnt-orange: #CB5C1F;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-image: url(./background/image_full.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+footer {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: var(--burnt-orange);
+    font-family: "Roboto", "serif";
+    color: var(--black-bean);
+    font-weight: bold;
+    padding-top: 1rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover , footer a:active{
+    text-decoration: underline;
+    color: inherit ;
+}
+
+@media(max-width: 900px){
+    html {
+        background-image: url(./background/image_tablet.jpg);
+    }
+}
+
+@media (max-width: 480px){
+
+    html {
+        background-image: url(./background/image_mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .result-container {
+        margin-top: 4rem;
+    }
+    
+}
